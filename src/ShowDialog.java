@@ -9,7 +9,7 @@ import javax.swing.*;
 public class ShowDialog extends AnAction {
 
     public static void main(String[] args) {
-        //JOptionPane.showMessageDialog(null,"ENTER Message HERE");
+        JOptionPane.showMessageDialog(null,"ENTER Message HERE");
     }
 
     @Override
