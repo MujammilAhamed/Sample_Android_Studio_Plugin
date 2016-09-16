@@ -1,0 +1,49 @@
+<idea-plugin version="2">
+  <id>com.mujammil.plugin.test</id>
+  <name>Quixxi Test Plugin</name>
+  <version>1.0</version>
+  <vendor email="mujammil.ahamed@gmail.com" url="http://www.lakeba.com">Lakeba IT Solutions</vendor>
+
+  <description><![CDATA[
+      Sample Plugin For Test Created using Intellij Idea<br>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      First Release.<br>
+      No Changes.<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+   uncomment to enable plugin in all products
+  <depends>com.intellij.modules.androidstudio</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action class="ShowDialog"
+            id="3421"
+            icon="/res/ic_launcher.png"
+            text="Test Plugin"
+            description="Testing Plugin">
+      <add-to-group group-id="MainToolBar"
+                    relative-to-action="HelpTopics"
+                    anchor="after"/>
+
+      <add-to-group group-id="WindowMenu"
+                    anchor="first"/>
+      
+      <keyboard-shortcut first-keystroke="ctrl shift D"
+              keymap="$default"/>
+
+    </action>
+  </actions>
+
+</idea-plugin>
