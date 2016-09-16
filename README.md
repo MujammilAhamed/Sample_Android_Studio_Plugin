@@ -1,2 +1,2 @@
-# Android_Studio_Plugin
+# Android Studio Plugin
 Creating Sample Android Studio Plugin
